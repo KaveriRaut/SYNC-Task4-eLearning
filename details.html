@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .wrapper {
+            height: 420px;
+            width: 1000px;
+            margin: 50px auto;
+            border-radius: 7px 7px 7px 7px;
+            -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-img {
+            float: left;
+            height: 420px;
+            width: 450px;
+        }
+
+        .product-img img {
+            border-radius: 7px 0 0 7px;
+            cursor: pointer;
+        }
+
+        .product-info {
+            float: left;
+            height: 420px;
+            width: 550px;
+            border-radius: 0 7px 10px 7px;
+            background-color: #ffffff;
+        }
+
+        .product-text {
+            height: 300px;
+            width: 327px;
+        }
+
+        .product-text h1 {
+            margin: 0 0 0 38px;
+            padding-top: 52px;
+            font-size: 34px;
+            color: #474747;
+        }
+
+        .product-text h1,
+        .product-price-btn p {
+            font-family: 'Bentham', serif;
+        }
+
+        .product-text h2 {
+            margin: 0 0 35px 38px;
+            font-size: 13px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #d2d2d2;
+            letter-spacing: 0.2em;
+        }
+
+        .product-text p {
+            height: 125px;
+            margin: 0 0 0 38px;
+            font-family: 'Playfair Display', serif;
+            color: #8d8d8d;
+            line-height: 1.7em;
+            font-size: 15px;
+            font-weight: lighter;
+            overflow: hidden;
+        }
+
+        .product-price-btn {
+            height: 103px;
+            width: 327px;
+            margin-top: 17px;
+            position: relative;
+        }
+
+        .product-price-btn p {
+            display: inline-block;
+            position: absolute;
+            top: -13px;
+            height: 50px;
+            font-family: 'Trocchi', serif;
+            margin: 0 0 0 38px;
+            font-size: 28px;
+            font-weight: lighter;
+            color: #474747;
+        }
+
+        span {
+            display: inline-block;
+            height: 50px;
+            font-family: 'Suranna', serif;
+            font-size: 34px;
+        }
+
+        .product-price-btn button {
+            display: inline-block;
+            height: 50px;
+            width: 176px;
+            margin: 0 40px 0 16px;
+            box-sizing: border-box;
+            border: transparent;
+            border-radius: 60px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #ffffff;
+            background-color: #4ad5ae;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .product-price-btn button:hover {
+            background-color: #687d7b;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-lightbulb"></i> e-Learning </a>
+
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="home.html">home</a>
+            <a href="about.html">about</a>
+            <a href="courses.html">courses</a>
+            <a href="contact.html">contact</a>
+            <a href="upload.html">Upload</a>
+        </nav>
+
+        <div class="icons">
+            <div id="account-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+    </header>
+
+    <!-- account form section starts  -->
+
+    <div class="account-form">
+
+        <div id="close-form" class="fas fa-times"></div>
+
+        <div class="buttons">
+            <span class="btn active login-btn">login</span>
+            <span class="btn register-btn">register</span>
+        </div>
+
+        <form class="login-form active" action="">
+            <h3>login now</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+                <a href="#">forgot password?</a>
+            </div>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+        <form class="register-form" action="">
+            <h3>register now</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <input type="password" placeholder="confirm your password" class="box">
+            <input type="submit" value="register now" class="btn">
+        </form>
+
+    </div>
+
+    <!-- account form section ends -->
+
+    <!-- details of course -->
+
+
+    <div class="wrapper">
+        <div class="product-img">
+            <img src="/images/v3.jpg" height="420" width="500">
+            <!-- <video id="myVid" src="https://youtu.be/dD2EISBDjWM" autoPlay loop controls width="500" height="420"></video> -->
+        </div>
+        <div class="product-info">
+            <div class="product-text">
+                <h1>Lecture1:Basics of HTML</h1>
+                <h2>by Angela Yu</h2>
+                <p>HTML is a markup language that is used to create web pages. It defines how the web page looks and how
+                    to display content with the help of elements. It forms or defines the structure of our Web Page,
+                    thus it forms or defines the structure of our Web Page.</p>
+            </div>
+            <div class="product-price-btn">
+                <button type="button" onclick="location.href='https://youtu.be/dD2EISBDjWM'">Play now ▶</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="product-img">
+            <img src="/images/v3.jpg" height="420" width="500">
+        </div>
+        <div class="product-info">
+            <div class="product-text">
+                <h1>Lecture2:Basics of CSS</h1>
+                <h2>by Angela Yu</h2>
+                <p>CSS stands for Cascading Style Sheets. It is the language for describing the presentation of Web
+                    pages, including colours, layout, and fonts, thus making our web pages presentable to the users. CSS
+                    is designed to make style sheets for the web. </p>
+            </div>
+            <div class="product-price-btn">
+                <button type="button" onclick="location.href='https://youtu.be/qKoajPPWpmo'">Play now ▶</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="product-img">
+            <img src="/images/v3.jpg" height="420" width="500">
+        </div>
+        <div class="product-info">
+            <div class="product-text">
+                <h1>Lecture3:Javascript till Intermediate</h1>
+                <h2>by Angela Yu</h2>
+                <p>JavaScript is a lightweight, cross-platform, and interpreted compiled programming language which is
+                    also known as the scripting language for webpages. It is well-known for the development of web
+                    pages, many non-browser environments also use it. JavaScript can be used for Client-side
+                    developments as well as Server-side developments. </p>
+            </div>
+            <div class="product-price-btn">
+                <button type="button" onclick="location.href='https://youtu.be/xpZLS6R91rQ'">Play now ▶</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="product-img">
+            <img src="/images/v3.jpg" height="420" width="500">
+        </div>
+        <div class="product-info">
+            <div class="product-text">
+                <h1>Lecture4:Intro to MERN</h1>
+                <h2>by Angela Yu</h2>
+                <p>MERN stack is a collection of technologies that enables faster application development. It is used by
+                    developers worldwide. The main purpose of using MERN stack is to develop apps using JavaScript only.
+                    This is because the four technologies that make up the technology stack are all JS-based. </p>
+            </div>
+            <div class="product-price-btn">
+                <button type="button" onclick="location.href='https://youtu.be/PtgpSwEYx1s'">Play now ▶</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="product-img">
+            <img src="/images/v3.jpg" height="420" width="500">
+        </div>
+        <div class="product-info">
+            <div class="product-text">
+                <h1>Lecture5:Intro to React.js</h1>
+                <h2>by Angela Yu</h2>
+                <p>ReactJS is a declarative, efficient, and flexible JavaScript library for building reusable UI
+                    components. It is an open-source, component-based front end library responsible only for the view
+                    layer of the application. It was created by Jordan Walke, who was a software engineer at Facebook
+                </p>
+            </div>
+            <div class="product-price-btn">
+                <button type="button" onclick="location.href='https://youtu.be/Y6aYx_KKM7A'">Play now ▶</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="product-img">
+            <img src="/images/v3.jpg" height="420" width="500">
+        </div>
+        <div class="product-info">
+            <div class="product-text">
+                <h1>Lecture6:Intro to Backend</h1>
+                <h2>by Angela Yu</h2>
+                <p>Backend Development is the term for the behind-the-scenes activities that happens when you do
+                    anything on a website or web application. It is mostly referred to the server-side of an application
+                    and everything that communicates between the database and the frontend/browser.</p>
+            </div>
+            <div class="product-price-btn">
+                <button type="button" onclick="location.href='https://youtu.be/8u1o-OmOeGQ'">Play now ▶</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="product-img">
+            <img src="/images/v3.jpg" height="420" width="500">
+        </div>
+        <div class="product-info">
+            <div class="product-text">
+                <h1>Lecture7:Node.js & Express.js</h1>
+                <h2>by Angela Yu</h2>
+                <p>NodeJS is an open-source JavaScript runtime environment that allows users to run code on the server.
+                    It comes with the node package manager or npm, enabling users to select from a wide selection of
+                    node modules or packages. Being developed on the Chrome JavaScript Engine enables Node to execute
+                    code faster.</p>
+            </div>
+            <div class="product-price-btn">
+                <button type="button" onclick="location.href='https://youtu.be/8u1o-OmOeGQ'">Play now ▶</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="product-img">
+            <img src="/images/v3.jpg" height="420" width="500">
+        </div>
+        <div class="product-info">
+            <div class="product-text">
+                <h1>Lecture8:MongoDB Database</h1>
+                <h2>by Angela Yu</h2>
+                <p>MongoDB is a NoSQL DBMS where data is stored in the form of documents having key-value pairs similar
+                    to JSON objects. MongoDB enables users to create databases, schemas, and tables. It offers the Mongo
+                    shell that provides a JS interface for deleting, querying, and updating the records. </p>
+            </div>
+            <div class="product-price-btn">
+                <button type="button" onclick="location.href='https://youtu.be/pFCN2IGF0fI'">Play now ▶</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-lightbulb"></i> e-Learning </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, voluptatem.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html" class="link">home</a>
+                <a href="about.html" class="link">about</a>
+                <a href="courses.html" class="link">courses</a>
+                <a href="contact.html" class="link">contact</a>
+            </div>
+
+            <div class="box">
+                <h3>useful links</h3>
+                <a href="#" class="link">help center</a>
+                <a href="#" class="link">ask questions</a>
+                <a href="#" class="link">send feedback</a>
+                <a href="#" class="link">private policy</a>
+                <a href="#" class="link">terms of use</a>
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest upadates</p>
+                <form action="">
+                    <input type="email" name="" placeholder="enter your email" id="" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+
+        </div>
+
+        <div class="credit"> Made with ❤ by Kaveri Raut @2023 </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script>
+        var myVideo = document.getElementById("myVid");
+        function playVideo() {
+            myVideo.play();
+        }
+        function pauseVideo() {
+            myVideo.pause();
+        } 
+    </script>
+</body>
+
+</html>
